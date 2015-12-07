@@ -1,0 +1,8 @@
+room_mst_id,room_number,room_type_id,state,customer_id
+1,1001,1,IDLE,0
+2,1002,2,IDLE,0
+3,1003,3,IDLE,0
+4,1004,4,IDLE,0
+5,1005,5,IDLE,0
+6,1006,6,IDLE,0
+7,1007,7,IDLE,0

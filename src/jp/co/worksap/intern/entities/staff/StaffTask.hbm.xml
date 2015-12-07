@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-12-6 15:03:21 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jp.co.worksap.intern.entities.staff.StaffTask" table="STAFFTASK">
+        <id name="taskId" type="java.lang.Integer">
+            <column name="TASKID" />
+            <generator class="native" />
+        </id>
+        <property name="requestId" type="java.lang.Integer">
+            <column name="REQUESTID" />
+        </property>
+        <property name="staffId" type="java.lang.Integer">
+            <column name="STAFFID" />
+        </property>
+        <property name="taskStartTime" type="java.util.Date">
+            <column name="TASKSTARTTIME" />
+        </property>
+        <property name="taskEndTime" type="java.util.Date">
+            <column name="TASKENDTIME" />
+        </property>
+        <property name="taskState" type="java.lang.String">
+            <column name="TASKSTATE" />
+        </property>
+        <property name="desc" type="java.lang.String">
+            <column name="DESC" />
+        </property>
+    </class>
+</hibernate-mapping>

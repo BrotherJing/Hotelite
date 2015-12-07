@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-12-6 11:54:51 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jp.co.worksap.intern.entities.staff.ShiftRecord" table="SHIFTRECORD">
+        <id name="shiftId" type="java.lang.Integer">
+            <column name="SHIFTID" />
+            <generator class="native" />
+        </id>
+        <property name="staffId" type="java.lang.Integer">
+            <column name="STAFFID" />
+        </property>
+        <property name="recordStartTime" type="java.util.Date">
+            <column name="RECORDSTARTTIME" />
+        </property>
+        <property name="recordEndTime" type="java.util.Date">
+            <column name="RECORDENDTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

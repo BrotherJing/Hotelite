@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2015 1:01:06 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jp.co.worksap.intern.entities.room.RoomRecord" table="ROOMRECORD">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="RECORDID" />
+            <generator class="native" />
+        </id>
+        <property name="staffId" type="java.lang.Integer">
+            <column name="STAFFID" />
+        </property>
+        <property name="recordType" type="java.lang.String">
+            <column name="RECORDTYPE" />
+        </property>
+        <property name="roomId" type="java.lang.Integer">
+            <column name="ROOMID" />
+        </property>
+        <property name="customerId" type="java.lang.Integer">
+            <column name="CUSTOMERID" />
+        </property>
+        <property name="recordStartTime" type="java.sql.Date">
+            <column name="RECORDSTARTTIME" />
+        </property>
+        <property name="recordEndTime" type="java.sql.Date">
+            <column name="RECORDENDTIME" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="show_sql">true</property>  
+        <property name="hibernate.dialect">jp.co.worksap.intern.util.SQLiteDialect</property>
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:test.db</property>
+        <property name="hbm2ddl.auto">update</property>
+
+        <mapping resource="jp/co/worksap/intern/entities/customer/CustomerDTO.hbm.xml" />
+        <mapping resource="jp/co/worksap/intern/entities/customer/CustomerRequest.hbm.xml" />
+
+        <mapping resource="jp/co/worksap/intern/entities/room/RoomDTO.hbm.xml" />
+        <mapping resource="jp/co/worksap/intern/entities/room/RoomTypeDTO.hbm.xml" />
+        <mapping resource="jp/co/worksap/intern/entities/room/RoomRecord.hbm.xml" />
+
+        <mapping resource="jp/co/worksap/intern/entities/staff/StaffDTO.hbm.xml" />
+        <mapping resource="jp/co/worksap/intern/entities/staff/StaffTask.hbm.xml" />
+        <mapping resource="jp/co/worksap/intern/entities/staff/ShiftRecord.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
